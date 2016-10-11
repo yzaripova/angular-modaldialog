@@ -34,8 +34,8 @@
       var urlVars = rtbUtils.getUrlVars();
       var isFirstLogin = 'firstLogin' in urlVars;
       $scope.currentRoute = urlVars.path;
-      if(!$scope.currentRoute) {
-        window.location.href = '/?path=board&firstLogin';
+      if(!$scope.currentRoute && window.location.search === '') {
+        window.location.search = 'path=board&firstLogin';
       }
 
       $scope.emails = [];
