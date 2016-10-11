@@ -1,0 +1,135 @@
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('fonts/Myriad Pro Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('fonts/MyriadPro-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('fonts/MyriadPro-Semibold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body, button, input, textarea, select {
+  font-family: 'Myriad Pro', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.margit-t-56 {
+  margin-top: 56px;
+}
+
+.btn-primary {
+  box-sizing: border-box;
+  margin-right: 18px;
+  border: 1px solid #69f;
+  border-radius: 2px;
+  padding: 6.5px 10px;
+  min-width: 100px; 
+  background: #69f;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-large {
+  height: 65px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+.btn-disabled {
+  opacity: 0.6;
+}
+
+.btn-loading {
+
+}
+
+.btn-link {
+  color: #69f;
+  text-decoration: underline;
+}
+
+.btn-link:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.first-login-modal .modal-dialog-content {
+  padding: 50px 95px 53px;
+  word-spacing: 1px;
+}
+
+.first-login-modal .header {
+  margin-bottom: 73px;
+  font-size: 33px;  
+  word-spacing: 1px;
+  color: #343c4c;
+}
+
+.second-login-modal .modal-dialog-content {
+  padding-bottom: 50px;
+  word-spacing: -1px;
+}
+
+.second-login-modal .header {
+  margin-bottom: 26px;
+  font-size: 23px;  
+  color: #343c4c;
+}
+
+.second-login-modal .form-header {
+  margin-bottom: 4px;
+  color: #acb3b6
+}
+
+.second-login-modal .emails-editor {
+  border: 1px solid #d3dadd;
+  border-radius: 2px;
+  height: 119px;
+}
+
+.second-login-modal .form-checkbox {
+  float: left;
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.second-login-modal .btn-primary {
+  margin-top: 11px;
+  margin-bottom: 18px;
+}
+
+.second-login-modal .modal-footer {
+  position: absolute;
+  bottom: -36px;
+  left: 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+}

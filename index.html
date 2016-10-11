@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <title>Test app</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/emails-editor.css">
+    <link rel="stylesheet" type="text/css" href="css/modal-dialog.css">
+    <script type="text/javascript" src="vendor/angular.js"></script>
+  </head>
+  <body ng-controller="MainController">
+    <router current-route="currentRoute"></router>
+
+    <modal-dialog data-show="firstLoginModalShown" class="first-login-modal">
+      <div class="header">Add your team details</div>
+      <form class="form">
+        <div class="field">
+          <label>What is the name of your team?</label>
+          <input type="text" class="form-control" ng-model="name">
+        </div>
+        <div class="field">
+          <label>How many people are in your company?</label>
+          <select class="form-control" ng-model="companySize">
+            <option>3 members</option>
+            <option>10 members</option>
+            <option>50 members</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Your phone number</label>
+          <input type="text" class="form-control" ng-model="phone">
+        </div>
+        <button class="btn-primary margit-t-56 btn-large" ng-click="continueToInvite(name, companySize, phone)">Continue</button>
+      </form>
+    </modal-dialog>
+
+    <modal-dialog data-show="secondLoginModalShown" class="second-login-modal">
+      <div class="header">Congrats! Your team has been created.<br>
+        <strong>My team</strong>
+      </div>
+      <form class="form">
+        <div class="form-header">Add team members. <br>
+          <small>Enter emails addresses, separated by commas.</small>
+        </div>
+        <div class="field">
+          <emails-editor data-emails="emails"></emails-editor>
+        </div>
+        <div class="field">
+          <input type="checkbox" class="form-checkbox" ng-model="inviteToFirstBoard" id="checkbox_id">
+          <label for="checkbox_id">Add these people to my board</label>
+        </div>
+        <button
+          class="btn-primary btn-large"
+          ng-class="setDidabled()"
+          ng-disabled="setDidabled()"
+          ng-click="inviteUsersToTeam(inviteToFirstBoard)">
+          {{inviteText}}
+        </button>
+      </form>
+      <div class="modal-footer">
+        <div class="btn-link" ng-click="hideModal()">Add later</div>
+      </div>
+    </modal-dialog>
+
+    <script type="text/javascript" src="js/api.js"></script>
+    <script type="text/javascript" src="js/utils.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="directives/modal-dialog/modal-dialog.js"></script>
+    <script type="text/javascript" src="directives/emails-editor/emails-editor.js"></script>
+  </body>
+</html>
+
+

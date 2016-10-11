@@ -1,0 +1,16 @@
+{
+  "name": "",
+  "private": true,
+  "devDependencies": {
+    "http-server": "^0.9.0"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "http-server . -a localhost -p 8000 -c-1"
+  },
+  "app": [
+    "fonts/MyriadPro-Light.ttf",
+    "fonts/MyriadPro-Regular.otf",
+    "fonts/MyriadPro-Semibold.otf"
+  ]
+}

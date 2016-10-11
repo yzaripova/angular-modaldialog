@@ -1,0 +1,45 @@
+.emails-editor {
+  display: block;
+  box-sizing: border-box;
+  padding: 7px 8px;
+  background: #fff;
+  border-top: 1px solid #ccc;
+  height: 100px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.emails-editor > input {
+  border: none;
+  outline: none;
+}
+
+.email-in-block {
+  display: inline-block;
+  margin-right: 6px;
+  margin-bottom: 5px;
+  padding: 2px 10px;
+  border-radius: 15px;
+  background: #d9e8ff;
+  height: 24px;
+  box-sizing: border-box;
+}
+
+.email-in-block.not-valid > .text {
+  border-bottom: 1px solid #d9534f;
+}
+
+.email-in-block > .remove-icon {
+  display: inline-block;
+  margin-left: 3px;
+  cursor: pointer;
+  color: #333;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.email-in-block > .remove-icon:hover {
+  color #000;
+}
