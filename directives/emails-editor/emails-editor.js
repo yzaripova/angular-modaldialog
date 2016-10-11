@@ -9,7 +9,7 @@
     .directive('emailsEditor', function() {
       return {
         replace: false,
-        templateUrl: '../directives/emails-editor/emails-editor.template.html',
+        templateUrl: 'directives/emails-editor/emails-editor.template.html',
         scope: {
           emails: '='
         },
