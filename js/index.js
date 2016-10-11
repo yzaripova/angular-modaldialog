@@ -49,7 +49,7 @@
         $scope.secondLoginModalShown = true;
       };
 
-      $scope.setDidabled = function() {
+      $scope.setDisabled = function() {
         return $scope.emails.length > 0 ? '' : 'btn-disabled';
       };
 
